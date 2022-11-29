@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyContactsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#EEEEEE">
+
+        <SearchView
+            android:id="@+id/menu_search_view"
+            android:layout_width="2102dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/ic_search"
+            android:iconifiedByDefault="false"
+            android:imeOptions="actionDone"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search Contact"
+            android:searchHintIcon="@null"
+            android:searchIcon="@null"
+            tools:queryHint="Search Contact" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_showall"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-300dp"
+            android:text="All"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:onClick="vf_showAll"
+            android:textSize="8dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:stateListAnimator="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+       <Button
+            android:id="@+id/button_showfavorite"
+           android:onClick="vf_showFavorite"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-180dp"
+            android:text="Favorite"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+           android:stateListAnimator="@null"
+           android:textColor="#8D8DAB"
+            android:textSize="8dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_showall"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="100dp"
+                android:padding="4dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recyclerView_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="40dp"
+                android:padding="4dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:src="@drawable/ic_emptyfavorite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="No list of contact here, add contact now"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="35dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    android:textColor="@color/black" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ViewFlipper>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="32dp"
+            android:clickable="true"
+            android:onClick="addUser"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="Add Advisor"
+            android:backgroundTint="#32BAA5"
+            android:tint="@color/white"
+            android:src="@drawable/button_face" />
+
+    </RelativeLayout>
+
+</FrameLayout>

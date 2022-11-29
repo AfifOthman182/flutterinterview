@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "79305684626",
+    "firebase_url": "https://dashlabs-2910d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dashlabs-2910d",
+    "storage_bucket": "dashlabs-2910d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79305684626:android:e890e69ad78cbfb35bd84b",
+        "android_client_info": {
+          "package_name": "com.example.databasecardsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79305684626-74toehda8iuv19jdvigk49t4rkb3isvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAETX5xOUQ3-2_HsV3pidlzlgvEw9CWYxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79305684626-74toehda8iuv19jdvigk49t4rkb3isvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79305684626:android:16336c6e62fd7a425bd84b",
+        "android_client_info": {
+          "package_name": "com.example.flutterinterview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79305684626-74toehda8iuv19jdvigk49t4rkb3isvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAETX5xOUQ3-2_HsV3pidlzlgvEw9CWYxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79305684626-74toehda8iuv19jdvigk49t4rkb3isvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
